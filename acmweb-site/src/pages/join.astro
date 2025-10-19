@@ -1,0 +1,135 @@
+---
+import Logo from "../components/Logo.astro";
+---
+
+<div id="join" class="container">
+  <span class="title">HOW TO JOIN</span>
+  <div class="joinContent">
+    <p>
+      If you are interested in joining, you can click <a
+        href="https://discord.gg/QUGa4MRBtg"
+        target="_blank">here</a
+      > to access our discord for weekly club updates and extra information. In addition,
+      we have meetings every <b>Wednesday</b> from <b>5-6 PM</b> inside room <b>CS221</b
+      >. Anyone is welcome to join regardless of experience, as we welcome all
+      skill levels. Even if you've never coded before, we will help you out.
+    </p>
+    <Logo />
+  </div>
+  <div class="float f1">&ltfooter&gt</div>
+  <div class="float f2">&ltp&gt</div>
+  <div class="float f3">&ltdiv&gt</div>
+  <div class="float f4">&ltmain&gt</div>
+  <div class="float f5">&lthtml&gt</div>
+  <div class="float f6">&ltscript&gt</div>
+</div>
+
+<style>
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+  }
+  .title {
+    font-size: 6rem;
+    font-weight: 500;
+    line-height: 145.86px;
+    text-align: left;
+    text-decoration-skip-ink: none;
+  }
+  p {
+    width: 30vw;
+    font-size: 1.5rem;
+    font-weight: 300;
+    line-height: 35.57px;
+    text-align: center;
+    text-decoration-skip-ink: none;
+    margin-right: 3em;
+  }
+  .joinContent {
+    display: flex;
+    flex-direction: row;
+  }
+  .float {
+    position: absolute;
+    animation: float 4s ease-in-out infinite;
+    color: white;
+    font-size: xx-large;
+    font-weight: lighter;
+  }
+  .f1 {
+    top: 330vh;
+    left: 10vw;
+    animation: float 4.1s ease-in-out infinite;
+  }
+  .f2 {
+    top: 380vh;
+    left: 15vw;
+    animation: float 4.2s ease-in-out infinite;
+  }
+  .f3 {
+    top: 385vh;
+    left: 40vw;
+    animation: float 4.3s ease-in-out infinite;
+  }
+  .f4 {
+    top: 320vh;
+    left: 85vw;
+    animation: float 4.4s ease-in-out infinite;
+  }
+  .f5 {
+    top: 350vh;
+    left: 90vw;
+    animation: float 4.5s ease-in-out infinite;
+  }
+  .f6 {
+    top: 380vh;
+    left: 80vw;
+    animation: float 4.6s ease-in-out infinite;
+  }
+  @keyframes float {
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+
+  @media (min-width: 1800px) {
+    p {
+      font-size: 2rem;
+    }
+  }
+
+  @media (max-width: 1200px) {
+    .title {
+      font-size: 3rem;
+    }
+    p {
+      font-size: 1.2rem;
+    }
+    .float {
+      font-size: medium;
+    }
+  }
+  @media (max-width: 600px) {
+    .title {
+      font-size: 1.5rem;
+    }
+    p {
+      font-size: 1rem;
+      width: 75%;
+      margin-right: 0;
+    }
+    .joinContent {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+    }
+  }
+</style>

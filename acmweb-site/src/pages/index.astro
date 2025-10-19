@@ -1,0 +1,61 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Navbar from "../components/Navbar.astro";
+import Home from "./home.astro";
+import About from "./about.astro";
+import Contact from "./contact.astro";
+import Join from "./join.astro";
+---
+
+<Layout title="ACM Web">
+  <div class="bg-gradient"></div>
+  <Navbar />
+  <Home />
+  <About />
+  <Contact />
+  <Join />
+</Layout>
+
+<style>
+  .bg-gradient {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(180deg, #342572 0%, #2f2739 100%);
+  }
+</style>
+
+<script is:inline>
+  (function () {
+    const navbar = document.getElementById("navbar-container");
+    const aboutSection = document.getElementById("about");
+
+    if (navbar === null || aboutSection === null) return;
+
+    function setMargin(currentScroll) {
+      const navbarHeight = navbar.offsetHeight;
+      const endAppear = aboutSection.offsetTop;
+      const startAppear = endAppear - navbarHeight;
+
+      if (currentScroll <= startAppear) {
+        navbar.style.marginTop = `-${navbarHeight + 10}px`;
+      } else if (currentScroll >= endAppear) {
+        navbar.style.marginTop = "0px";
+      } else {
+        let interpolatePercent =
+          (navbarHeight * (endAppear - currentScroll)) /
+          (endAppear - startAppear);
+        navbar.style.marginTop = `-${interpolatePercent}px`;
+      }
+    }
+
+    navbar.style.marginTop = "-100vh";
+
+    document.addEventListener("scroll", (e) => {
+      setMargin(window.scrollY);
+    });
+  })();
+</script>

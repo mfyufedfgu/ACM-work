@@ -1,0 +1,150 @@
+<div id="contact" class="container">
+  <span class="title">CONTACT US</span>
+  <p>
+    If you have any questions and would like to contact us, please fill out the
+    form below, and we will try to get back to you. Alternatively, a link to
+    join our Discord server is available on the Join page.
+  </p>
+  <form
+    id="contactForm"
+    action="https://api.web3forms.com/submit"
+    method="POST"
+  >
+    <input
+      type="hidden"
+      name="access_key"
+      value="567d1c63-5299-4c1f-a2cb-3a9a367e95ed"
+    />
+    <input placeholder="NAME" type="text" name="name" required />
+    <input placeholder="EMAIL" type="email" name="email" required />
+    <textarea placeholder="MESSAGE" name="message" required></textarea>
+    <input
+      type="checkbox"
+      name="botcheck"
+      class="hidden"
+      style="display: none;"
+    />
+    <button type="submit">SUBMIT</button>
+  </form>
+</div>
+
+<style>
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    width: 35%;
+  }
+  .title {
+    font-size: 6rem;
+    font-weight: 500;
+    line-height: 145.86px;
+    text-align: left;
+    text-decoration-skip-ink: none;
+  }
+  p {
+    width: 30vw;
+    font-size: 1.5rem;
+    font-weight: 300;
+    text-align: center;
+    text-decoration-skip-ink: none;
+  }
+  input {
+    font-size: 1.8rem;
+    font-weight: 400;
+    width: 100%;
+    text-align: left;
+    text-decoration-skip-ink: none;
+    color: #6c6767;
+    background: #bebebe;
+    box-shadow: 0px 3.69px 3.69px 0px #00000040;
+    border-radius: 30px;
+    padding: 1%;
+  }
+  textarea {
+    min-height: 10rem;
+    max-height: 15rem;
+    min-width: 100%;
+    max-width: 100%;
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-align: left;
+    text-decoration-skip-ink: none;
+    color: #6c6767;
+    background: #bebebe;
+    box-shadow: 0px 3.69px 3.69px 0px #00000040;
+    border-radius: 30px;
+    padding: 1%;
+    width: 100%;
+  }
+  button {
+    background: linear-gradient(180deg, #a6d4ff 0%, #5d5bc5 100%);
+    color: #ffffff;
+    font-size: 29.36px;
+    font-weight: 500;
+    line-height: 43.5px;
+    text-align: left;
+    text-decoration-skip-ink: none;
+    padding: 0 0.75em;
+    gap: 1em;
+    border-radius: 50px;
+    width: 100%;
+    text-align: center;
+    cursor: pointer;
+  }
+  @media (min-width: 1800px) {
+    p {
+      font-size: 2rem;
+    }
+  }
+
+  @media (max-width: 1200px) {
+    .title {
+      font-size: 4rem;
+    }
+
+    p {
+      font-size: 1.2rem;
+    }
+
+    form {
+      width: 30%;
+    }
+  }
+
+  @media (max-width: 600px) {
+    .title {
+      font-size: 2.5rem;
+    }
+
+    p {
+      font-size: 1rem;
+      width: 75%;
+    }
+
+    form {
+      width: 60%;
+    }
+
+    input {
+      font-size: 1.2rem;
+      padding: 3%;
+    }
+    textarea {
+      font-size: 1.2rem;
+      padding: 3%;
+    }
+
+    button {
+      font-size: 1.2rem;
+    }
+  }
+</style>

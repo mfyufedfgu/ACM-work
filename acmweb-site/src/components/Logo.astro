@@ -1,0 +1,200 @@
+---
+interface Props {}
+---
+
+<div class="logo-wrapper">
+  <svg viewBox="0 0 455 408" fill="none">
+    <g filter="url(#filter0_d_10_213)">
+      <ellipse cx="252.857" cy="185.607" rx="182.684" ry="185.607" fill="white"
+      ></ellipse>
+    </g>
+    <g filter="url(#filter1_d_10_213)">
+      <path
+        d="M131.067 255.289L9.368 371.214H252.76L131.067 255.289Z"
+        fill="white"></path>
+    </g>
+    <g filter="url(#filter2_d_10_213)">
+      <path
+        class="left-bracket"
+        d="M212.581 236.201L144.2683 204.627V184.466L212.581 152.476V174.053L168.094 194.297V194.963L212.581 214.874V236.201Z"
+        fill="black"></path>
+      <path
+        class="slash1"
+        d="
+        M214.08 271.94
+        L242.7795 190.215
+        H261.691
+        L232.825 271.94
+        H214.08
+        Z"
+        fill="black"></path>
+      <path
+        class="slash2"
+        d="
+        M242.7795 190.215
+        L271.479 108.49
+        H290.557
+        L261.691 190.215
+        H242.7795
+        Z"
+        fill="black"></path>
+      <path
+        class="right-bracket"
+        d="M293.473 236.201V214.874L338.042 194.963V194.297L293.473 174.053V152.476L361.785 184.466V204.627L293.473 236.201Z"
+        fill="black"></path>
+    </g>
+    <defs>
+      <filter
+        id="filter0_d_10_213"
+        x="60.804579"
+        y="0"
+        width="384.105"
+        height="389.951"
+        filterUnits="userSpaceOnUse"
+        color-interpolation-filters="sRGB"
+      >
+        <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+        <feColorMatrix
+          in="SourceAlpha"
+          type="matrix"
+          values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+          result="hardAlpha"></feColorMatrix>
+        <feOffset dy="9.36842"></feOffset>
+        <feGaussianBlur stdDeviation="4.68421"></feGaussianBlur>
+        <feComposite in2="hardAlpha" operator="out"></feComposite>
+        <feColorMatrix
+          type="matrix"
+          values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"></feColorMatrix>
+        <feBlend
+          mode="normal"
+          in2="BackgroundImageFix"
+          result="effect1_dropShadow_10_213"></feBlend>
+        <feBlend
+          mode="normal"
+          in="SourceGraphic"
+          in2="effect1_dropShadow_10_213"
+          result="shape"></feBlend>
+      </filter>
+      <filter
+        id="filter1_d_10_213"
+        x="0"
+        y="255.289"
+        width="262.135"
+        height="132.914"
+        filterUnits="userSpaceOnUse"
+        color-interpolation-filters="sRGB"
+      >
+        <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+        <feColorMatrix
+          in="SourceAlpha"
+          type="matrix"
+          values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+          result="hardAlpha"></feColorMatrix>
+        <feOffset dy="9.36842"></feOffset>
+        <feGaussianBlur stdDeviation="4.68421"></feGaussianBlur>
+        <feComposite in2="hardAlpha" operator="out"></feComposite>
+        <feColorMatrix
+          type="matrix"
+          values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"></feColorMatrix>
+        <feBlend
+          mode="normal"
+          in2="BackgroundImageFix"
+          result="effect1_dropShadow_10_213"></feBlend>
+        <feBlend
+          mode="normal"
+          in="SourceGraphic"
+          in2="effect1_dropShadow_10_213"
+          result="shape"></feBlend>
+      </filter>
+      <filter
+        id="filter2_d_10_213"
+        x="134.8998"
+        y="108.49"
+        width="236.254"
+        height="182.187"
+        filterUnits="userSpaceOnUse"
+        color-interpolation-filters="sRGB"
+      >
+        <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+        <feColorMatrix
+          in="SourceAlpha"
+          type="matrix"
+          values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+          result="hardAlpha"></feColorMatrix>
+        <feOffset dy="9.36842"></feOffset>
+        <feGaussianBlur stdDeviation="4.68421"></feGaussianBlur>
+        <feComposite in2="hardAlpha" operator="out"></feComposite>
+        <feColorMatrix
+          type="matrix"
+          values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"></feColorMatrix>
+        <feBlend
+          mode="normal"
+          in2="BackgroundImageFix"
+          result="effect1_dropShadow_10_213"></feBlend>
+        <feBlend
+          mode="normal"
+          in="SourceGraphic"
+          in2="effect1_dropShadow_10_213"
+          result="shape"></feBlend>
+      </filter>
+    </defs>
+  </svg>
+</div>
+
+<style>
+  .logo-wrapper {
+    overflow: hidden;
+    width: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .logo {
+    user-select: none;
+  }
+  .logo svg {
+    width: 10vw;
+    height: 10vh;
+  }
+  .logo svg path.right-bracket {
+    transform: rotate(0deg);
+    transition: transform 1s;
+    transform-origin: 65% 46%;
+  }
+  .logo svg path.slash1 {
+    transform: rotate(0deg);
+    transition: transform 1s;
+    transform-origin: 48% 54%;
+  }
+  .logo svg path.slash2 {
+    transform: rotate(0deg);
+    transition: transform 1s;
+    transform-origin: 39% 52%;
+  }
+  .logo svg path.left-bracket {
+    transform: rotate(0deg);
+    transition: transform 1s;
+    transform-origin: 45% 45%;
+  }
+
+  @media (max-width: 1200px) {
+    .logo-wrapper {
+      width: 20vh;
+    }
+
+    .logo svg {
+      width: 7vw;
+      height: 7vh;
+    }
+  }
+  @media (max-width: 600px) {
+    .logo-wrapper {
+      width: 15vh;
+    }
+
+    .logo svg {
+      width: 5vw;
+      height: 5vh;
+    }
+  }
+</style>

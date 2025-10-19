@@ -1,0 +1,167 @@
+---
+import Logo from "../components/Logo.astro";
+---
+
+<div id="start" class="container">
+  <span class="title">ACM WEB</span>
+  <div class="start-container">
+    <a href="/acmweb-site/#about" class="start-button"> Start </a>
+  </div>
+  <Logo />
+  <div class="float f1">&lthr&gt</div>
+  <div class="float f2">&ltpre&gt</div>
+  <div class="float f3">&ltheader&gt</div>
+  <div class="float f4">&ltfooter&gt</div>
+  <div class="float f5">&ltdiv&gt</div>
+  <div class="float f6">&ltp&gt</div>
+  <div class="float f7">&lthtml&gt</div>
+  <div class="float f8">&ltul&gt</div>
+  <div class="float f9">&lth1&gt</div>
+  <div class="float f10">&lth3&gt</div>
+</div>
+
+<style>
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+  }
+  .title {
+    font-size: 12.5rem;
+    font-weight: 400;
+
+    letter-spacing: 0.01em;
+    text-align: center;
+    text-decoration-skip-ink: none;
+  }
+  .start-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .start-button {
+    width: 330px;
+    height: 100px;
+    font-family: "Oswald";
+    border-radius: 50px;
+    font-size: 4.5rem;
+    font-weight: bold;
+    color: #fffbfb;
+    background-image: linear-gradient(#683b5c, #312646);
+    border-style: none;
+    text-shadow: 2px 2px 2.5px black;
+    box-shadow:
+      5px,
+      5px,
+      3px black;
+    letter-spacing: 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    line-height: 0;
+    margin-bottom: 0.5em;
+  }
+  .start-button:active {
+    filter: brightness(85%);
+  }
+  .start-button:hover {
+    filter: brightness(85%);
+  }
+  .float {
+    position: absolute;
+    animation: float 4s ease-in-out infinite;
+    color: white;
+    font-size: xx-large;
+    font-weight: lighter;
+  }
+  .f1 {
+    top: 5vh;
+    left: 20vw;
+    animation: float 4.1s ease-in-out infinite;
+  }
+  .f2 {
+    top: 10vh;
+    left: 60vw;
+    animation: float 4.2s ease-in-out infinite;
+  }
+  .f3 {
+    top: 20vh;
+    left: 80vw;
+    animation: float 4.3s ease-in-out infinite;
+  }
+  .f4 {
+    top: 30vh;
+    left: 10vw;
+    animation: float 4.4s ease-in-out infinite;
+  }
+  .f5 {
+    top: 60vh;
+    left: 8vw;
+    animation: float 4.5s ease-in-out infinite;
+  }
+  .f6 {
+    top: 80vh;
+    left: 15vw;
+    animation: float 4.6s ease-in-out infinite;
+  }
+  .f7 {
+    top: 90vh;
+    left: 25vw;
+    animation: float 4.7s ease-in-out infinite;
+  }
+  .f8 {
+    top: 80vh;
+    left: 75vw;
+    animation: float 4.8s ease-in-out infinite;
+  }
+  .f9 {
+    top: 70vh;
+    left: 85vw;
+    animation: float 4.9s ease-in-out infinite;
+  }
+  .f10 {
+    top: 90vh;
+    left: 87vw;
+    animation: float 5s ease-in-out infinite;
+  }
+  @keyframes float {
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+
+  @media (max-width: 1200px) {
+    .float {
+      font-size: medium;
+    }
+
+    .title {
+      font-size: 8rem;
+    }
+
+    .start-button {
+      width: 230px;
+      height: 75px;
+      font-size: 2rem;
+    }
+  }
+
+  @media (max-width: 600px) {
+    .title {
+      font-size: 6rem;
+    }
+
+    .start-button {
+      width: 130px;
+      height: 50px;
+      font-size: 1rem;
+    }
+  }
+</style>
